@@ -1,103 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--! Спочатку нормалізатор -->
+    <!--! завантаження modern-normalize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+        integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
     <title>MoGo</title>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="./index.html">MoGo</a>
-            <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#services">SERVICE</a></li>
-                <li><a href="./index.html">WORK</a></li>
-                <li><a href="./index.html">BLOG</a></li>
-                <li><a href="./index.html">CONTACT</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container flex-baseline">
+            <a class="logo" href="./index.html">MoGo</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a class="nav-link" href="#about">ABOUT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">SERVICE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">WORK</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">BLOG</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <main>
-        <section>
-            <p>We work with</p>
-            <h1 id="services">AMAZING SERVICES</h1>
-            <ul>
-                <li>
-                    <img src="./images/clock.jpg" alt="clock">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/graph.jpg" alt="graph">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/display.jpg" alt="display">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/paper.jpg" alt="paper">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/home.jpg" alt="home">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-                <li>
-                    <img src="./images/marketing.jpg" alt="marketing">
-                    <h3>PHOTOGRAPHY</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos reiciendis voluptatem excepturi error, eius cem.
-                    </p>
-                </li>
-            </ul>
+    <main class="main">
+        <section class="amazing-services">
+            <div class="container">
+                <p class="before-title">We work with</p>
+                <h1 class="section-title" id="services">AMAZING SERVICES</h1>
+                <div class="line"></div>
+                <ul class="services-list">
+                    <li class="services-item">
+                        <svg class="services-svg" width="38" height="37">
+                            <use href="./images/icons-sprite.svg#clock"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <svg class="services-svg" width="37" height="37">
+                            <use href="./images/icons-sprite.svg#graph"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <svg class="services-svg" width="37" height="37">
+                            <use href="./images/icons-sprite.svg#display"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <svg class="services-svg" width="37" height="37">
+                            <use href="./images/icons-sprite.svg#paper"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <svg class="services-svg" width="37" height="37">
+                            <use href="./images/icons-sprite.svg#home"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </div>
+                    </li>
+                    <li class="services-item">
+                        <svg class="services-svg" width="37" height="37">
+                            <use href="./images/icons-sprite.svg#marketing"></use>
+                        </svg>
+                        <div class="services-content">
+                            <h3 class="content-title">PHOTOGRAPHY</h3>
+                            <p class="content-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
-        <section>
-            <p>Who we are</p>
-            <h2 id="about">MEET OUR TEAM</h2>
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui laborum, modi sed eius in quisquam!
-            </p>
-            <ul>
-                <li>
-                    <img src="./images/dix.jpg" alt="matthew dix">
-                    <h3>MATTHEW DIX</h3>
-                    <p>Graphic Design</p>
-                </li>
-                <li>
-                    <img src="./images/campbell.jpg" alt="christopher campbell">
-                    <h3>CHRISTOPHER CAMPBELL</h3>
-                    <p>Branding/UX design</p>
-                </li>
-                <li>
-                    <img src="./images/fertig.jpg" alt="michael fertig">
-                    <h3>MICHAEL FERTIG</h3>
-                    <p>Developer</p>
-                </li>
-            </ul>
+        <section class="our-team">
+            <div class="container">
+                <p class="before-title">Who we are</p>
+                <h2 class="section-title" id="about">MEET OUR TEAM</h2>
+                <div class="line"></div>
+                <p class="our-team-description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.
+                </p>
+                <ul class="our-team-list">
+                    <li class="our-team-item">
+                        <img class="our-team-img" src="./images/dix.jpg" alt="matthew dix">
+                        <h3 class="img-title">MATTHEW DIX</h3>
+                        <p class="img-description">Graphic Design</p>
+                    </li>
+                    <li class="our-team-item">
+                        <img src="./images/campbell.jpg" alt="christopher campbell">
+                        <h3 class="img-title">CHRISTOPHER CAMPBELL</h3>
+                        <p class="img-description">Branding/UX design</p>
+                    </li>
+                    <li class="our-team-item">
+                        <img src="./images/fertig.jpg" alt="michael fertig">
+                        <h3 class="img-title">MICHAEL FERTIG</h3>
+                        <p class="img-description">Developer</p>
+                    </li>
+                </ul>
+            </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2016 MoGo free PSD template by Laaqiq</p>
-        <form>
-            <input type="email" placeholder="Your Email...">
-            <button type="submit">SUBSCRIBE</button>
-        </form>
+    <footer class="footer">
+        <div class="container flex-alignitems">
+            <p class="copyright">&copy; 2016 MoGo free PSD template by <span class="last-word">Laaqiq</span></p>
+            <form class="form">
+                <input class="form-input" type="email" placeholder="Your Email...">
+                <button class="form-button" type="submit">SUBSCRIBE</button>
+            </form>
+        </div>
     </footer>
 </body>
+
 </html>

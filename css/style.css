@@ -1,0 +1,239 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Kaushan Script", sans-serif;
+    /* ---------------- */
+    --main-color: #95e1d3;
+    --hover-color: #f38181;
+    --first-shadow-color: #333;
+    --second-shadow-color: #b6b6b6;
+    --first-light-color: #fff;
+}
+
+body {
+    font-family: var(--second-family);
+    font-size: 15px;
+}
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    /* outline: 1px solid red; */
+}
+
+.flex-alignitems {
+    display: flex;
+    align-items: center;
+}
+
+.flex-baseline {
+    display: flex;
+    align-items: baseline;
+}
+
+/* ------------------ */
+
+.header {
+    margin-top: 17px;
+    margin-bottom: 68px;
+}
+
+.logo {
+    margin-right: 620px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.nav-list {
+    display: flex;
+    gap: 55px;
+}
+
+.nav-link {
+    display: flex;
+}
+
+.nav-link {
+    position: relative;
+    height: 30px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    height: 3px;
+    display: none;
+    background: var(--hover-color);
+}
+
+.nav-link:hover {
+    color: var(--hover-color);
+}
+
+.nav-link:hover::after {
+    display: block;
+}
+
+/* ------------------- */
+
+.amazing-services {
+    margin-bottom: 100px;
+}
+
+.before-title {
+    font-family: var(--third-family);
+    font-size: 24px;
+    color: var(--first-shadow-color);
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--first-shadow-color);
+    text-align: center;
+}
+
+.line {
+    width: 60px;
+    height: 4px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 65px;
+    background: var(--hover-color);
+}
+
+.services-list {
+    width: 1169px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    column-gap: 34px;
+    row-gap: 105px;
+}
+
+.services-item {
+    display: flex;
+    width: 367px;
+}
+
+.services-svg {
+    /* display: inline-block; */
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* .services-content {
+    display: inline-block;
+} */
+
+.content-title {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--first-shadow-color);
+}
+
+.content-description {
+    line-height: 147%;
+    /* white-space: pre; */
+    color: var(--second-shadow-color);
+}
+
+/* ---------------- */
+
+.our-team {
+    margin-bottom: 80px;
+}
+
+.our-team-description {
+    margin-bottom: 27px;
+    text-align: center;
+    color: var(--second-shadow-color);
+}
+
+.our-team-list {
+    display: flex;
+    gap: 30px;
+}
+
+.our-team-item {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-title {
+    margin-bottom: 11px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+    color: var(--first-shadow-color);
+}
+
+.img-description {
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+    color: var(--second-shadow-color);
+}
+
+/* -------------------------- */
+
+.footer {
+    height: 60px;
+    padding: 10px 0px;
+    border-top: 1px solid var(--second-shadow-color);
+}
+
+.copyright {
+    margin-right: 523px;
+    font-family: var(--font-family);
+    font-size: 14px;
+    color: var(--first-shadow-color);
+}
+
+.last-word {
+    color: var(--hover-color);
+}
+
+.form {
+    display: flex;
+}
+
+.form-input {
+    width: 230px;
+    height: 40px;
+    border: 1px solid var(--second-shadow-color);
+    font-style: italic;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--second-shadow-color);
+}
+
+.form-button {
+    width: 150px;
+    height: 40px;
+    border: none;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: var(--first-light-color);
+    background: var(--main-color);
+}
